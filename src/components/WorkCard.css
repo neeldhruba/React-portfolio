@@ -1,0 +1,127 @@
+.project-heading{
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+}
+.project-container{
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 5rem;
+}
+.project-card{
+  background: #8f59f2;
+  padding: 1.2rem 1rem;
+}
+.project-card img{
+  width: 100%;
+
+}
+.project-title{
+  color: #fff;
+  padding:1rem 0;
+}
+.pro-details p{
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+
+}
+
+.pro-btns{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.pro-btns .btn{
+  padding: 0.5rem 1rem;
+  
+}
+/* body.active-modal {
+    overflow-y: hidden;
+} */
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal{
+  position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(8px);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 99999;
+}
+
+/* .overlay {
+  background: rgba(49,49,49,0.8);
+} */
+.modal-content {
+/* background: #212121;
+height: fit-content;
+ height: 90%;
+  width: 90%;
+
+align-items: center;
+justify-content: center;
+position: relative;
+padding: 1rem 0.5rem;
+  display: flex;position: relative;*/ 
+ 
+  height: 90%;
+  width: 70vw;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+   */
+}
+
+.close-modal {
+  
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  cursor: pointer;
+  padding: 12px;
+font-size: 1rem;
+text-transform: uppercase;
+background: rgb(241, 208, 23);
+color:rgb(10, 1, 49);
+border: 1px solid #fff;
+font-weight: 600;
+
+}
+@media screen and (max-width:740px){
+  .project-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+
+  }
+  .close-modal {
+  
+    position: absolute !important;
+    top: 8px !important;
+    right: 8px !important;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background: rgb(241, 208, 23);
+    color:rgb(10, 1, 49);
+    border: 1px solid #fff;
+    font-weight: 400;
+  
+  }
+  
+}
