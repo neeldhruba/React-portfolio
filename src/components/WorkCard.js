@@ -2,25 +2,28 @@ import React from 'react';
 import "./WorkCard.css";
 import port from "../assests/port.png";
 import work2 from "../assests/work2.png";
-import credit from "../assests/Credit.png"
-import bre from "../assests/bre.png"
+import credit from "../assests/card.jpg"
+// import bre from "../assests/bre.png"
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import DocViewer,{DocViewerRenderers} from 'react-doc-viewer'
-
+import DocViewer, {DocViewerRenderers} from 'react-doc-viewer'
+// 
 // import Modal from './Modal';
 function WorkCard() {
   const [modal, setModal] = useState(false);
+  // const pdf = [
+  //       {
+  //         uri: require("../assests/b.pdf")
+  //       },
+  // ];
     const docs = [
         {
             uri: require("../assests/c.pdf")
         },
-    ]
-    const doc = [
-      {
-          uri: require("../assests/b.pdf")
-      },
-  ]
+        
+    ];
+  
+
     const toggleModal = () => {
       setModal(!modal);
     };
@@ -43,7 +46,6 @@ function WorkCard() {
             <p>This is an online learning platform using MERN Stack.</p>
               <div className='pro-btns'>
                <button onClick={kernel} className="btn"> View</button>
-               
               </div>
           </div>
     </div>
@@ -76,7 +78,10 @@ function WorkCard() {
           <div className="modal">
             <div onClick={toggleModal} className="overlay"></div>
             {/* <div className="modal-content"> */}
-              <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} className="modal-content"/>
+              <DocViewer 
+              documents= {docs}
+             pluginRenderers={DocViewerRenderers} 
+              className="modal-content"/>
               
               <button className="close-modal" onClick={toggleModal}>
                 CLOSE
@@ -84,11 +89,10 @@ function WorkCard() {
             {/* </div> */}
           </div>
         )}
-        
               </div>
           </div>
     </div>
-    <hr/>
+    {/* <hr/>
     <div className='project-card'>
       <img src={bre} alt="img"/>
         <h2 className='project-title'>Breast Cancer Classification using Machine Learning</h2>
@@ -97,26 +101,29 @@ function WorkCard() {
               <div className='pro-btns'>
               {/* <Modal className="btn"/> */}
                {/* <NavLink to="https://kernelstar.vercel.app/" className="btn">Source</NavLink> */}
-               <button onClick={toggleModal} className="btn">
+               {/* <button onClick={toggleModal} className="btn">
                 View
-               </button>
+               </button> */}
   
-        {modal && (
+        {/* {modal && (
           <div className="modal">
             <div onClick={toggleModal} className="overlay"></div>
             {/* <div className="modal-content"> */}
-              <DocViewer documents={doc} pluginRenderers={DocViewerRenderers} className="modal-content"/>
+              {/* <DocViewer 
+              documents={pdf} 
+              pluginRenderers={DocViewerRenderers} 
+              className="modal-content"/> */}
               
-              <button className="close-modal" onClick={toggleModal}>
+              {/* <button className="close-modal" onClick={toggleModal}>
                 CLOSE
-              </button>
-            {/* </div> */}
+              </button> */}
+            {/* </div>
           </div>
         )}
         
               </div>
           </div>
-    </div>
+    </div>  */}
     </React.Fragment>
   )
 }
