@@ -36,6 +36,9 @@ function WorkCard() {
     const kernel =()=>{
       window.open('https://kernelstar.vercel.app/','_blank');
     }
+    const portf =()=>{
+      window.open('https://neeldhruba-portfolio.netlify.app/','_blank');
+    }
   return (
     <React.Fragment >
     
@@ -56,7 +59,7 @@ function WorkCard() {
           <div className='pro-details'>
             <p>This is a portfolio using ReactJs.</p>
               <div className='pro-btns'>
-               <NavLink to="url.com" className="btn"> View</NavLink>
+              <button onClick={portf} className="btn"> View</button>
                
               </div>
           </div>
