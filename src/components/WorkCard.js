@@ -4,7 +4,7 @@ import port from "../assests/port.png";
 import work2 from "../assests/work2.png";
 import credit from "../assests/card.jpg"
 // import bre from "../assests/bre.png"
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import DocViewer, {DocViewerRenderers} from 'react-doc-viewer'
 // 

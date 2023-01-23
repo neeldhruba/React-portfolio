@@ -46,24 +46,24 @@
   border-radius: 50%;
   padding: 10px;
   margin-bottom: 10px;
-  animation: bounce 1s infinite alternate ease-in-out;
+  /* animation: bounce 1s infinite alternate ease-in-out; */
 }
-@keyframes bounce2 {
+/* @keyframes bounce2 {
   0% {
     transform: translate(-50%,-3px);
   }
   100% {
     transform: translate(-50%,3px);
-  }
-}
-@media screen and (max-width:900px) {
+  } 
+}*/
+@media screen and (max-width:6400px) {
   .content h1{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
  .content p{
     font-size:1.2rem;
   }
-  /* .arrdown{
+  .arrdown{
     color: white !important;
     position: absolute;
     bottom: 0;
@@ -74,5 +74,5 @@
     padding: 10px;
     margin-bottom: 10px;
     animation: bounce 1s infinite alternate ease-in-out;
-  } */
+  }
 }

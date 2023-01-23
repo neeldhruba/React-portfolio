@@ -10,10 +10,10 @@ body{
   background:rgb(10, 1, 49);
 }
 h1,h4,p,a{
-  color: rgb(255, 255, 255);
+  color: rgb(255, 211, 211);
   text-decoration: none;
-  
 }
+
 ul{
   list-style-type: none;
 }

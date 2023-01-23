@@ -17,7 +17,7 @@ class Heroimg2 extends Component {
         <p>{this.props.text}</p>
         </Fade>
       </div>
-      <Bounce top>
+      <Bounce left>
        <a href='#project'><ArrowDownwardIcon className='arrdown'/> </a>
       </Bounce>
     </div>
